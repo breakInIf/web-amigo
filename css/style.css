@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  background-image: url('../img/background.jpeg');
+  background-size: 200px;
+  background-repeat: repeat;
+}
+
+img{
+  width:100%;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-img{
+  margin: 20px;
+  width: 400px;
+}
+
+.change .container{
+  background-color: rgb(148, 43, 221, 0.8);
+  height: 200px;
+  max-width: 800px;
+  border: 4px #fff solid;
+  border-radius: 15px;
+}
+
+.inputs{
+  margin: 0 100px;
+  padding: 5px 15px;
+  border: 4px #fff solid;
+  border-radius: 12px;
+}
+
+.fa-exchange-alt{
+  color: #fff;
+}
+
+#rich-button{
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 4px #fff solid;
+  border-radius: 12px;
+  cursor: pointer;
+  animation: 1s buttonAnimation infinite;
+  -webkit-animation: 1s buttonAnimation infinite;
+}
+
+#rich-button:hover{
+  transform: scale(.95);
+  background-color: #942BDD;
+  color: #fff;
+}
+
+#click{
+  cursor: pointer;
+}
+
+/*Popup*/
+.popup-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: red;
+}
+
+.popup {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    margin: 10% auto;
+    padding: 60px;
+    position: relative;
+    animation: popupAnimation 0.5s infinite;
+    -webkit-animation: popupAnimation 0.5s infinite;
+}
+
+.popup a {
+    background: salmon;
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    margin: 30px auto;
+    display: block;
+    width: 50%;
+}
+
+.popup a:hover {
+    background: palevioletred;
+    transition: all 0.2s;
+}
+
+.popup-close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+/*Animations*/
+
+.dollar{
+  animation: dollarAnimation 1s infinite;
+  -webkit-animation: dollarAnimation 1s infinite;
+  color: darkgreen;
+}
+
+.doge{
+  animation: dogeAnimation 1s infinite;
+  -webkit-animation: dogeAnimation 1s infinite;
+}
+
+.ethereum{
+  animation: ethereumAnimation 1s infinite;
+  -webkit-animation: ethereumAnimation 1s infinite;
+}
+
+@keyframes dollarAnimation {
+  50%{transform: scale(1.5) rotate(30deg)}
+}
+
+@keyframes dogeAnimation {
+  50%{filter: hue-rotate(90deg);transform: translate(0px,10px);}
+}
+
+@keyframes ethereumAnimation {
+  66%{transform: translate(0, -10px);}
+}
+
+@keyframes buttonAnimation {
+  50%{transform: scale(1.2); background-color: red; color: white; border: 4px red solid;}
+}
+@keyframes popupAnimation {
+  50%{background-color: red; color: white;}
+}
