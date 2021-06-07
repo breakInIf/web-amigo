@@ -14,6 +14,12 @@ img{
   width:100%;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .container{
   max-width: 1000px;
   margin: 0 auto;
@@ -130,6 +136,10 @@ img{
 .ethereum{
   animation: ethereumAnimation 1s infinite;
   -webkit-animation: ethereumAnimation 1s infinite;
+}
+
+.form input{
+  text-align: right;
 }
 
 @keyframes dollarAnimation {
