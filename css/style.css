@@ -116,7 +116,9 @@ body{
 /*Animations*/
 
 @keyframes traducir {
-  0%{}
+  0%{
+    content: 'Página en construcción';
+  }
   25%{
     content: 'Page under construction';
   }
