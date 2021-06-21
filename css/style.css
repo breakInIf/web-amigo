@@ -47,7 +47,6 @@ body{
 .general_container .title::before{
   content: 'Página en construcción';
   animation: traducir 6s infinite;
-  -webkit-animation: traducir 6s infinite;
   animation-delay: 2s;
 }
 
@@ -117,6 +116,7 @@ body{
 /*Animations*/
 
 @keyframes traducir {
+  0%{}
   25%{
     content: 'Page under construction';
   }
